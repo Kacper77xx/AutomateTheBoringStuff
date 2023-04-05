@@ -58,6 +58,6 @@ etc.'''
 
 # bacon = 20
 # print(bacon + 1)
-print('spam' + 'spamspam')
-print('spam' * 5)
-print('I have eaten ' + str(99) + ' burritos')
+# print('spam' + 'spamspam')
+# print('spam' * 5)
+# print('I have eaten ' + str(99) + ' burritos')
