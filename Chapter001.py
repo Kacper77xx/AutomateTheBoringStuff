@@ -64,19 +64,29 @@
 #
 #
 
-a = int(input('Number:'))
-print('First number:' + str(a) + ' ' + str(type(a)))
-while True:
-    if a%3 == 0:
-        if a%9 == 0:
-            print('right')
-            break
-        print('ok')
-        break
-    else:
-        print('no')
-        break
+# a = int(input('Number:'))
+# print('First number:' + str(a) + ' ' + str(type(a)))
+# while True:
+#     if a%3 == 0:
+#         if a%9 == 0:
+#             print('right')
+#             break
+#         print('ok')
+#         break
+#     else:
+#         print('no')
+#         break
 
 # Pd for
-
-
+# list = list(range(0,100))
+# a = int(input('Number:'))
+# for a in list:
+#     if a%3 == 0 and a%9 == 0:
+#         print('ok')
+#     else:
+#         print('Not ok')
+#
+def Rest(a, b):
+    return a%b
+liczba = int(input('Liczba:'))
+print(Rest(liczba, 9 and 3))
