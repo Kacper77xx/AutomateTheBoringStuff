@@ -88,3 +88,29 @@
 # eggs = 42
 # spam()
 # print(eggs)
+
+# def spam(divideBy):
+#     try:
+#         return 42 / divideBy
+#     except ZeroDivisionError:
+#         print('Error, failure argument')
+# print(spam(2))
+# print(spam(0))
+# print(spam(21))
+# print(spam(42))
+
+import random
+secretNumber = random.randint(1, 20)
+print('Guess the number between 1 and 20')
+for guessesTaken in range(1, 7):
+    userGuess = int(input())
+    if userGuess > secretNumber:
+        print('Too high')
+    elif userGuess < secretNumber:
+        print('Too low')
+    else:
+        break
+if userGuess == secretNumber:
+    print('Awesome! You guessed my number which was ' + str(secretNumber))
+else:
+    print('Unlucky, maybe next time!')
