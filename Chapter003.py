@@ -115,3 +115,13 @@
 # else:
 #     print('Unlucky, maybe next time!')
 
+def collatz():
+    print('Give me a number!')
+    number = int(input())
+    if number % 2 == 0:
+        print(str(number) + ' // 2')
+        print( number//2)
+    elif number % 2 != 0:
+        print(str(number) + ' * 3 + 1')
+        print(number * 3 + 1)
+collatz()
