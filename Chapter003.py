@@ -12,27 +12,27 @@
 # hello('Peter')
 # hello(input())
 
-# import random
-# def getAnswer(answerNumber):
-#     if answerNumber == 1:
-#         return 'Of course'
-#     elif answerNumber == 2:
-#         return 'Sure'
-#     elif answerNumber == 3:
-#         return 'Yes'
-#     elif answerNumber == 4:
-#         return 'Not sure'
-#     elif answerNumber == 5:
-#         return 'Ask me later'
-#     elif answerNumber == 6:
-#         return 'Think about it again and answer'
-#     elif answerNumber == 7:
-#         return 'My answer is no'
-#     elif answerNumber == 8:
-#         return 'It looks not good'
-#     elif answerNumber == 9:
-#         return 'Very bad'
-# print(getAnswer(random.randint(1, 9)))
+import random
+def getAnswer(answerNumber):
+    if answerNumber == 1:
+        return 'Of course'
+    elif answerNumber == 2:
+        return 'Sure'
+    elif answerNumber == 3:
+        return 'Yes'
+    elif answerNumber == 4:
+        return 'Not sure'
+    elif answerNumber == 5:
+        return 'Ask me later'
+    elif answerNumber == 6:
+        return 'Think about it again and answer'
+    elif answerNumber == 7:
+        return 'My answer is no'
+    elif answerNumber == 8:
+        return 'It looks not good'
+    elif answerNumber == 9:
+        return 'Very bad'
+print(getAnswer(random.randint(1, 9)))
 
 # spam = print('Hello!')
 # print(None == spam)
@@ -115,18 +115,19 @@
 # else:
 #     print('Unlucky, maybe next time!')
 
-print('Give me a number!')
-try:
-    number = int(input())
-except  ValueError:
-    print('Enter a valid integer')
-def collatz(number):
-    if number % 2 == 0:
-        print(number // 2)
-        return number//2
-    elif number % 2 == 1:
-        print(3 * number + 1)
-        return 3 * number + 1
-number = input("Give me a number: ")
-while number != 1:
-    number = collatz(int(number))
+# print('Give me a number!')
+# try:
+#     number = int(input())
+# except  ValueError:
+#     print('Enter a valid integer')
+# def collatz(number):
+#     if number % 2 == 0:
+#         print(number // 2)
+#         return number//2
+#     elif number % 2 == 1:
+#         print(3 * number + 1)
+#         return 3 * number + 1
+# number = input("Give me a number: ")
+# while number != 1:
+#     number = collatz(int(number))
+
